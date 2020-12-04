@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickget(View view) {
 
-        EditText edtCat = findViewById(R.id.edtCat);
-        String url ="http://10.0.2.2:80/assi/info.php?cat=" + edtCat.getText();
+        EditText edtnum = findViewById(R.id.edtnum);
+        String url ="http://10.0.2.2:80/assi/info.php?cat=" + edtnum.getText();
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.INTERNET)
                 != PackageManager.PERMISSION_GRANTED) {
